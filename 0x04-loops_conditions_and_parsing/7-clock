@@ -10,8 +10,9 @@ do
         echo "Hour: "$h
         ((h++))
         m=1
+    else
+        echo $m
+        ((m++))
     fi
-    echo $m
-    ((m++))
 done
 
