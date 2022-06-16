@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+h=0
+m=60
+
+while [ $h -le 12 ];
+do
+    if [[ $m -eq 60 ]]
+    then
+        echo "Hour: "$h
+        ((h++))
+        m=1
+    fi
+    echo $m
+    ((m++))
+done
+
