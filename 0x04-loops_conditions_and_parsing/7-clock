@@ -2,6 +2,7 @@
 #comments
 h=0
 m=60
+i=0
 
 while [ $h -le 12 ];
 do
@@ -14,5 +15,11 @@ do
         echo $m
         ((m++))
     fi
+done
+
+while [ $i -le 59 ];
+do
+    echo $i
+    ((i++))
 done
 
