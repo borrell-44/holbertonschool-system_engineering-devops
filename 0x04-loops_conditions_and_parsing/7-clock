@@ -7,7 +7,7 @@ while [ $h -le 12 ];
 do
     if [[ $m -eq 60 ]]
     then
-        echo "Hour: "$h
+        echo "Hour: $h"
         ((h++))
         m=1
     else
