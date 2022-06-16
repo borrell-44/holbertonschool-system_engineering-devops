@@ -1,25 +1,16 @@
 #!/usr/bin/env bash
 #comments
 h=0
-m=60
-i=0
 
-while [ $h -le 12 ];
+while [ $h -le 12 ]
 do
-    if [[ $m -eq 60 ]]
-    then
-        echo "Hour: $h"
-        ((h++))
-        m=1
-    else
+    echo "Hour: $h"
+    m=1
+    while [ $m -le 59 ]
+    do
         echo $m
         ((m++))
-    fi
-done
-
-while [ $i -le 59 ];
-do
-    echo $i
-    ((i++))
+    done
+    ((h++))
 done
 
