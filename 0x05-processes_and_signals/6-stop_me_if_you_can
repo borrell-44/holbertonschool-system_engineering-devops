@@ -2,5 +2,5 @@
 #comments
 # shellcheck disable=SC2009
 
-pkill -9 -f 4-to_infinity_and_beyond
+pkill -f -SIGTERM 4-to_infinity_and_beyond
 
