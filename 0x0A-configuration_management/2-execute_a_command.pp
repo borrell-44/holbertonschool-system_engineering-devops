@@ -1,4 +1,4 @@
   # This source file will kill a process
-exec { 'pkill killmenow':
+exec {'pkill killmenow':
   provider  => 'shell'
 }
