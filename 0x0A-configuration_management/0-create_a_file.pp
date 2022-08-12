@@ -1,5 +1,5 @@
-  # This source file would be located on the Puppet master at
-  # /tmp/school
+ # This source file would be located on the Puppet master at
+# /tmp/school
 file {'/tmp/school':
   ensure  => 'present',
   path    => '/tmp/school',
