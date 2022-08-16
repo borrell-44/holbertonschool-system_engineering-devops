@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure SSH client to connect to server without a password
+# chmod 600 ~/.ssh/school
+PermitRootLogin no
+
+PasswordAuthentication no
+
+ChallengeResponseAuthentication no
