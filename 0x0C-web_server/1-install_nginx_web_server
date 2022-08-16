@@ -2,5 +2,14 @@
 # We are installing nginx on the web server
 sudo apt-get update;
 sudo apt-get -y install nginx;
-echo "Hello World!"
-
+sudo mkdir /etc/nginx/html;
+sudo touch /etc/nginx/html/index.html;
+echo "Hello World!" >> /etc/nginx/html/index.html;
+printf %s "server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  root /etc/nginx/html;
+  index index.html;
+}
+" > /etc/nginx/sites-available/default;
+sudo service nginx restart
