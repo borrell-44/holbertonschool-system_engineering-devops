@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# header response
+# Configure second server and the HTTP response
 
 apt-get update -y;
 apt-get install -y nginx;

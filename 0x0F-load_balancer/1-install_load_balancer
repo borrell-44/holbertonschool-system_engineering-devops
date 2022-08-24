@@ -1,8 +1,9 @@
 
 #!/usr/bin/env bash
-# config load balancer
+# Install and configure HAproxy on 1b-01 server
 
-sudo apt update && sudo apt upgrade -y;
+sudo apt update -y;
+sudo apt upgrade -y;
 sudo apt-get -y install haproxy;
 sudo sed -i "$ aENABLED=1" /etc/init.d/haproxy;
 
@@ -18,5 +19,5 @@ backend myservers
     timeout server 10s
     balance roundrobin
     mode http" >> /etc/haproxy/haproxy.cfg;
-  sudo service haproxy restart
+sudo service haproxy restart
 
