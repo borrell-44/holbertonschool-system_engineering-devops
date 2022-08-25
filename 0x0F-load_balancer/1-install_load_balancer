@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # Install and configure HAproxy on 1b-01 server
 
@@ -20,4 +19,3 @@ backend myservers
     balance roundrobin
     mode http" >> /etc/haproxy/haproxy.cfg;
 sudo service haproxy restart
-
