@@ -12,8 +12,8 @@ frontend myfrontend
     default_backend myservers
   
 backend myservers
-    server 4269-web01 107.21.129.118
-    server 4269-web02 3.80.186.196
+    server 4517-web-01 52.23.203.134
+    server 4517-web-02 50.19.56.156
     timeout connect 5s
     timeout server 10s
     balance roundrobin
