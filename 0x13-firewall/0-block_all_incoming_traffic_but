@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Install and configure ufw to only alow pecific TCP ports
+
+sudo apt-get update -y;
+sudo apt-get -y install ufw;
+
+ufw default deny incoming;
+
+ufw allow 22;
+ufw allow 443/https/ssl;
+ufw allow 80/http;
+uwf 22/TCP;
+
+ufw enable
