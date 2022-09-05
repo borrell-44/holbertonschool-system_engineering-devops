@@ -3,4 +3,4 @@
 
 adduser "$1";
 sudo -u "$1" whoami;
-deluser "$1"
+#deluser "$1"
