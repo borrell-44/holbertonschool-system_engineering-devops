@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+
+"""Rest API of todo list"""
+
 from sys import argv
 import requests
 import json
-"""Rest API of todo list"""
 
 if __name__ == "__main__":
     """Print tasks done by employee id"""
