@@ -2,9 +2,9 @@
 
 """Rest API of todo list"""
 
-from sys import argv
 import json
 import requests
+from sys import argv
 
 if __name__ == "__main__":
     """Print tasks done by employee id"""
