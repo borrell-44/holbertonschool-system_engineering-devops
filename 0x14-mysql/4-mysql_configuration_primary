@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
 # set up MySQL primary server
+
+apt-get update;
+
+ufw allow from 54.160.238.196 to any port 3306;
