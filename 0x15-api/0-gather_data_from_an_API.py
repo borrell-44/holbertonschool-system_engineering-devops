@@ -15,12 +15,12 @@ if __name__ == "__main__":
     users_url = "https://jsonplaceholder.typicode.com/users"
     todos_url = "https://jsonplaceholder.typicode.com/todos"
 
-    parse_json = requests.get(users_url).json()
+    parse_user = requests.get(users_url).json()
 
-    for u in parse_json:
+    for u in parse_user:
         if u.get("id") is arg:
-            parse = requests.get(todos_url).json()
-            for task in parse:
+            parse_todo = requests.get(todos_url).json()
+            for task in parse_todo:
                 if task.get("userId") is arg:
                     done += 1
                     if task.get("completed") is True:
