@@ -29,4 +29,4 @@ if __name__ == "__main__":
             print("Employee {} is done with tasks({}/{}):"
                   .format(u.get("name"), total, done))
             for line in todo:
-                print("\t{}".format(line))
+                print("\t {}".format(line))
