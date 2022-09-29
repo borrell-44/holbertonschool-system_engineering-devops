@@ -16,7 +16,6 @@ def number_of_subscribers(subreddit):
     except json.decoder.JSONDecodeError:
         return 0
 
-    """print(f"\n{val}\n")"""
     return val.data.subscribers
 
     for k in d.keys():
