@@ -9,14 +9,15 @@ import requests
 def number_of_subscribers(subreddit):
     """Return number of subs of the subreddit"""
 
-    url = "https://www.reddit.com/r/8uyv/about.json"
+    url = "https://www.reddit.com/r/NoStupidQuestions/about.json".format(subreddit)
 
     try:
         val = requests.get(url).json()
     except json.decoder.JSONDecodeError:
         return 0
 
-    return json.loads(val.data)
+    """print(f"\n{val}\n")"""
+    return val.data.subscribers
 
     for k in d.keys():
         if k == 'data':
