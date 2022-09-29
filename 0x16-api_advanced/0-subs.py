@@ -10,7 +10,8 @@ def number_of_subscribers(subreddit):
     """Return number of subs of the subreddit"""
 
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    header = {'User-Agent': 'Custom Agent', 'From': '4517@holbertonstudents.com'}
+    header = {'User-Agent': 'Custom Agent',
+              'From': '4517@holbertonstudents.com'}
 
     try:
         val = requests.get(url, headers=header).json()
