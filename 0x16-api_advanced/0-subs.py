@@ -8,8 +8,7 @@ import requests
 def number_of_subscribers(subreddit):
     """Return number of subs of the subreddit"""
 
-    url = "https://www.reddit.com/r/funny/about.json"
-    data = 'data'
+    url = "https://www.reddit.com/r/{}/about.json".formta(subreddit)
 
     val = requests.get(url).json()
     return json.loads(val.data)
