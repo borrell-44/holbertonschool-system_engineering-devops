@@ -15,10 +15,11 @@ def number_of_subscribers(subreddit):
         val = requests.get(url).json()
     except json.decoder.JSONDecodeError:
         return 0
+
     if 'data' not in val.keys():
         return 0
 
-    return val.data.subscribers
+    return val.get('data').get('subscribers')
 
     for k in d.keys():
         if k == 'data':
