@@ -23,7 +23,7 @@ def top_ten(subreddit):
         return
 
     children = val.get('data').get('children')
-    for i in range(9):
+    for i in range(0, 10):
         if i > len(children):
             return
         print(children[i].get('data').get('title'))
