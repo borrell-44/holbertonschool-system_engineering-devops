@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Get the number of subscribers from the Reddit API"""
+"""Get the top 10 posts of a subreddit"""
 
 import json
 import requests
